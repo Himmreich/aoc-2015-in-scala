@@ -10,7 +10,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Scala
       - uses: olafurpg/setup-scala@v11
         with:
           java-version: temurin@20
