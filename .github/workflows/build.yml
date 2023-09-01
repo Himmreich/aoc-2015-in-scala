@@ -2,7 +2,6 @@ name: Scala SBT Build CI
 
 on:
   push:
-    master
   workflow_dispatch:
 
 jobs:
