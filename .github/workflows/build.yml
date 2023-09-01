@@ -1,0 +1,19 @@
+name: Scala SBT Build CI
+
+on:
+  push:
+    master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Scala
+      - uses: olafurpg/setup-scala@v11
+        with:
+          java-version: temurin@20
+      - name: Compile
+        run: sbt compile
