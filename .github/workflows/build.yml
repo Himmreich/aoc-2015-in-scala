@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: olafurpg/setup-scala@v11
+      - uses: olafurpg/setup-scala@v14
         with:
           java-version: temurin@20
       - name: Compile
